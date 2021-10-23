@@ -13,16 +13,16 @@
         <!-- <img src=https://m.media-amazon.com/images/M/MV5BMjI5MjE1MzUzN15BMl5BanBnXkFtZTgwODEyNjQxMTE@._V1_.jpg/> -->
         <p></p>
         <!-- Example2, image location in relationship to the image -->
-        <img src="img/KBA.jpg"/>
+        <img src="img/KBA.jpg" />
         <p></p>
         <!-- Example3, image location in relationship to the folder -->
-        <img src="/WorkSheet/img/KBA.jpg" alt="KBA Logo"/> 
+        <img src="/WorkSheet/img/KBA.jpg" alt="KBA Logo" />
     </header>
 
     <!-- Ordered List -->
-    <ol> 
+    <ol>
         <!-- Anchor tag -->
-        <li><a href="index.html"> Home</a></li> 
+        <li><a href="index.html"> Home</a></li>
         <li><a href="about.html"> About</a></li>
         <li><a href="privacy.html"> Privacy</a></li>
     </ol>
@@ -42,19 +42,64 @@
         <!-- Structural way represenation of same data -->
         <div>
             <p>CVS - HealthCare Company 2012-2019</p>
-            <p>Worked  register and did inventory</p>
+            <p>Worked register and did inventory</p>
         </div>
         <div>
             <p>McDonalds 2005-2012</p>
             <p>Burger and Fry Cook</p>
         </div>
     </main>
-    
+
+    <!-- Some information about the Page, not the main content of the page -->
+    <aside>
+        <h2>Contact Me</h2>
+        <form>
+            <!-- div makes the form look much better by putting them one by one -->
+            <div>
+                <!-- label is used to guide what input is needed to fill -->
+                <!-- for helps to navigate a user to go into the exact box when clicking the label -->
+                <label for="fullName">Full Name</label>
+            </div>
+            <div>
+                <!-- Self Close same a img-->
+                <input id="fullName" />
+            </div>
+            <div>
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input id="email" />
+            </div>       
+            <div>
+                <label for="subject">Subject</label>
+            </div>               
+            <!-- Drop down Form Options -->
+            <div>
+                <select id="subject">
+                    <option>Job Offer</option>
+                    <option>Personal Message</option>
+                    <option>Complaint</option>
+                </select>
+            </div>
+            <!-- Another kind of form structure -->
+            <div>
+                <label for="msg">Message</label>
+            </div>
+            <div>
+                <!-- Mention the rows and colums, i.e. the size of the message box  -->
+                <textarea id="msg" rows="4" cols="2"></textarea>
+            </div>
+            <div>
+                <input type="Submit" value="Send Email"/>
+            </div>
+        </form>
+    </aside>
+
     <!-- Step 3 -->
     <footer>
         &copy; 2021 Copyright - Rajdeep Mukherjee
     </footer>
-    
+
 </body>
 
 </html>
