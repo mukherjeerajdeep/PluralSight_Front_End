@@ -1,31 +1,24 @@
 /* This will be applied to the part of the body tag only */
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 /* This the style for main only */
-
 main {
     background-color: rgb(203, 204, 206);
     padding: 4px;
     color: #202020;
 }
 
-
 /* This will be applied for all h1 and h2 we have here just separated by commas */
-
-h1,
-h2 {
+h1, h2 {
     color: darkblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 /* All the images inside the header */
-
-header img {
+/* The id with headshot inside image is a more specific than a tag */
+#headshot {
     border: 1px solid lightgray;
     /*2pxforthetop-bottomand8pxforleft-right*/
     padding: 3px 10px;
@@ -39,4 +32,29 @@ header img {
     -ms-border-radius: 200px;
     -o-border-radius: 200px;
     max-width: 150px;
+}
+
+/* This max-widht will not work for the image as we have specific headshot for it already */
+img {
+    max-width: 500px;
+}
+
+/* Concept of class for specific changes */
+.experience{
+    border: inset 1px;
+    margin-bottom:  4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+}
+
+/* Making it class level prepares us to do micro level changes */
+.experience .title {
+    font-weight: bold;
+}
+
+/* Making it class level prepares us to do micro level changes */
+.experience .none {
+    font-weight: 900;
+    color: red;
 }
