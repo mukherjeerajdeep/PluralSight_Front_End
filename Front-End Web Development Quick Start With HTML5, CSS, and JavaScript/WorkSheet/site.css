@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* This the style for main only */
+
+main {
+    background-color: rgb(203, 204, 206);
+    padding: 4px;
+    color: #202020;
+}
+
+
+/* This will be applied for all h1 and h2 we have here just separated by commas */
+
+h1,
+h2 {
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
