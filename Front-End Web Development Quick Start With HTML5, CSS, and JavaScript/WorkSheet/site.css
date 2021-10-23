@@ -1,3 +1,5 @@
+/* This will be applied to the part of the body tag only */
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -18,4 +20,23 @@ h1,
 h2 {
     color: darkblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* All the images inside the header */
+
+header img {
+    border: 1px solid lightgray;
+    /*2pxforthetop-bottomand8pxforleft-right*/
+    padding: 3px 10px;
+    /*2px-top,6px-righ,8px-bottom,25px-left*/
+    /*padding: 2px 6px 10px 25px;
+    */
+    margin: 8px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    max-width: 150px;
 }
