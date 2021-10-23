@@ -93,7 +93,17 @@ footer{
     float: right;
 }
 
-header #headshot, header #siteName, header #menu {
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header #menu {
+    margin-left: auto;
+}
+
+/* header #headshot, header #siteName, header #menu {
     display: inline;
     vertical-align: middle;
-}
+} */
