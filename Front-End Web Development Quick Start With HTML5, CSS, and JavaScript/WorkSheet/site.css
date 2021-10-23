@@ -64,10 +64,36 @@ footer{
     color: lightblue;
     text-align: center;
     padding: 3px;
-    /*  */
+    /* Postion of the text to be fitted */
     position: fixed; 
     bottom: 0;
     left: 0;
     width: 100%;
 
+}
+
+#menu li{
+    display: inline;
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+    /* color: aliceblue; */
+}
+
+#menu li a {
+    color: rgb(248, 247, 247) !important;
+    text-decoration: none;
+}
+
+/* Here there are no space between li and .active as they belong to same tag */
+#menu li.active {
+    background-color: darkslateblue;
+}
+
+#menu {
+    float: right;
+}
+
+header #headshot, header #siteName, header #menu {
+    display: inline;
+    vertical-align: middle;
 }
