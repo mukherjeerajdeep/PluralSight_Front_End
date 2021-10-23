@@ -12,89 +12,90 @@
 <!-- Second Level of Format -->
 
 <body>
-    <!-- Add header -->
-    <header>
-        <img id="headshot" src="img/KBA.jpg" />
-        <h1 id="sitename"> Rajdeep Mukherjee </h1>        
-        <ul id="menu">
-            <!-- Anchor tag -->
-            <li class="active"><a href="index.html"> Home</a></li>
-            <li><a href="about.html"> About</a></li>
-            <li><a href="privacy.html"> Privacy</a></li>
-        </ul>
-    </header>
+    <div class="container">
+        <!-- Step 1 : Add header -->
+        <header>
+            <img id="headshot" src="img/KBA.jpg" />
+            <h1 id="sitename"> Rajdeep Mukherjee </h1>
+            <ul id="menu">
+                <!-- Anchor tag -->
+                <li class="active"><a href="index.html"> Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="privacy.html"> Privacy</a></li>
+            </ul>
+        </header>
 
 
-    <!-- Add main -->
-    <main>
-        <p><strong>Purpose</strong> This is a resume to get a job in Web Developement</p>
+        <!-- Step 2 : Add main -->
+        <main>
+            <p><strong>Purpose</strong> This is a resume to get a job in Web Developement</p>
 
-        <h2>Experience</h2>
-        <!-- Structural way represenation of same data -->
-        <div class="experience">
-            <p>CVS - HealthCare Company 2012-2019</p>
-            <p>Worked register and did inventory</p>
-        </div>
-        <div class="experience">
-            <p class="title"> McDonalds 2005-2012</p>
-            <p>Burger and Fry Cook</p>
-        </div>
-        <div class="experience">
-            <p class="none"> Self Empoyed 2001-2005</p>
-            <p>Doing some home Work</p>
-        </div>
-    </main>
+            <h2>Experience</h2>
+            <!-- Structural way represenation of same data -->
+            <div class="experience">
+                <p>CVS - HealthCare Company 2012-2019</p>
+                <p>Worked register and did inventory</p>
+            </div>
+            <div class="experience">
+                <p class="title"> McDonalds 2005-2012</p>
+                <p>Burger and Fry Cook</p>
+            </div>
+            <div class="experience">
+                <p class="none"> Self Empoyed 2001-2005</p>
+                <p>Doing some home Work</p>
+            </div>
+        </main>
 
-    <!-- Some information about the Page, not the main content of the page -->
-    <aside>
-        <h2>Contact Me</h2>
-        <form>
-            <!-- div makes the form look much better by putting them one by one -->
-            <div>
-                <!-- label is used to guide what input is needed to fill -->
-                <!-- for helps to navigate a user to go into the exact box when clicking the label -->
-                <label for="fullName">Full Name</label>
-            </div>
-            <div>
-                <!-- Self Close same a img-->
-                <input id="fullName" />
-            </div>
-            <div>
-                <label for="email">Email</label>
-            </div>
-            <div>
-                <input id="email" />
-            </div>
-            <div>
-                <label for="subject">Subject</label>
-            </div>
-            <!-- Drop down Form Options -->
-            <div>
-                <select id="subject">
-                    <option>Job Offer</option>
-                    <option>Personal Message</option>
-                    <option>Complaint</option>
-                </select>
-            </div>
-            <!-- Another kind of form structure -->
-            <div>
-                <label for="msg">Message</label>
-            </div>
-            <div>
-                <!-- Mention the rows and colums, i.e. the size of the message box  -->
-                <textarea id="msg" rows="4" cols="2"></textarea>
-            </div>
-            <div>
-                <input type="Submit" value="Send Email" />
-            </div>
-        </form>
-    </aside>
+        <!-- Some information about the Page, not the main content of the page -->
+        <aside>
+            <h2>Contact Me</h2>
+            <form>
+                <!-- div makes the form look much better by putting them one by one -->
+                <div>
+                    <!-- label is used to guide what input is needed to fill -->
+                    <!-- for helps to navigate a user to go into the exact box when clicking the label -->
+                    <label for="fullName">Full Name</label>
+                </div>
+                <div>
+                    <!-- Self Close same a img-->
+                    <input id="fullName" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input id="email" />
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                </div>
+                <!-- Drop down Form Options -->
+                <div>
+                    <select id="subject">
+                        <option>Job Offer</option>
+                        <option>Personal Message</option>
+                        <option>Complaint</option>
+                    </select>
+                </div>
+                <!-- Another kind of form structure -->
+                <div>
+                    <label for="msg">Message</label>
+                </div>
+                <div>
+                    <!-- Mention the rows and colums, i.e. the size of the message box  -->
+                    <textarea id="msg" rows="4" cols="2"></textarea>
+                </div>
+                <div>
+                    <input type="Submit" value="Send Email" />
+                </div>
+            </form>
+        </aside>
 
-    <!-- Step 3 -->
-    <footer>
-        &copy; 2021 Copyright - Rajdeep Mukherjee
-    </footer>
-
+        <!-- Step 3 : Add footer-->
+        <footer>
+            &copy; 2021 Copyright - Rajdeep Mukherjee
+        </footer>
+    </div>
 </body>
 
 </html>

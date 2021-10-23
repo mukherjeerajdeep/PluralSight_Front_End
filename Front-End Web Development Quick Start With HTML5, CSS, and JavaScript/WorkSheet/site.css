@@ -8,6 +8,11 @@ main {
     background-color: rgb(203, 204, 206);
     padding: 4px;
     color: #202020;
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
 }
 
 /* This will be applied for all h1 and h2 we have here just separated by commas */
@@ -69,7 +74,7 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-
+    grid-area: footer;
 }
 
 #menu li{
@@ -97,6 +102,7 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
+    grid-area: header;
 }
 
 header #menu {
@@ -107,3 +113,14 @@ header #menu {
     display: inline;
     vertical-align: middle;
 } */
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer"
+        ;
+    grid-template-columns: auto 200px;
+    grid-gap: 8px;
+}
