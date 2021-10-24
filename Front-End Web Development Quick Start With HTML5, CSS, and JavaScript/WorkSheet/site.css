@@ -11,6 +11,7 @@ main {
     grid-area: main;
 }
 
+/* Extra form element used and styles used without anything i.e. # . */
 aside {
     grid-area: aside;
 }
@@ -26,11 +27,13 @@ h1, h2 {
 #headshot {
     border: 1px solid lightgray;
     /*2pxforthetop-bottomand8pxforleft-right*/
+    /* Press F12 to see the borders around the element */
     padding: 3px 10px;
     /*2px-top,6px-righ,8px-bottom,25px-left*/
     /*padding: 2px 6px 10px 25px;
     */
     margin: 8px;
+    /* This makes the picture either square or round shaped */
     border-radius: 200px;
     -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
@@ -64,6 +67,7 @@ img {
     color: red;
 }
 
+/* This style is valid for footer tag only */
 footer{
     background-color: #202020;
     color: lightblue;
@@ -72,11 +76,14 @@ footer{
     /* Postion of the text to be fitted */
     position: fixed; 
     bottom: 0;
+    /* Used to cover all the left spaces */
     left: 0;
     width: 100%;
+    /* Grid is needed for aligning the contents+boxes in a page */
     grid-area: footer;
 }
 
+/* This is specific menu style with item list */
 #menu li{
     display: inline;
     padding: 8px;
@@ -84,6 +91,7 @@ footer{
     /* color: aliceblue; */
 }
 
+/* More indepth styling for href attribute */
 #menu li a {
     color: rgb(248, 247, 247) !important;
     text-decoration: none;
@@ -94,10 +102,12 @@ footer{
     background-color: darkslateblue;
 }
 
+/* The whole menu is right aligned */
 #menu {
     float: right;
 }
 
+/* The style applied in the header only */
 header {
     display: flex;
     justify-content: start;
@@ -105,6 +115,7 @@ header {
     grid-area: header;
 }
 
+/* One level down with menu which is id */
 header #menu {
     margin-left: auto;
 }
@@ -114,6 +125,7 @@ header #menu {
     vertical-align: middle;
 } */
 
+/* Container is a class hence it's always starts with ".container" */
 .container {
     display: grid;
     grid-template-areas: 
