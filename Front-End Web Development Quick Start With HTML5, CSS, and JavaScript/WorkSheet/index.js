@@ -9,6 +9,8 @@
 // document.writeln(fieldName + number);
 // //alert("Hello World");
 
+const formInfo = document.getElementById("formInfo");
+
 let hasJob = true;
 
 if(hasJob) {
@@ -24,7 +26,12 @@ if(dayOfWeek === 0 || dayOfWeek === 6) {
     showMessage("Please come back on the weekdays");
 }
 
-function showMessage(message) {
-    document.writeln("<p>" + message + "</p>");
-    document.writeln("<hr/>");
+function showMessage(message) {    
+    // This will change the way the form looks like, more control to show
+    // a message to a user.
+    formInfo.innerHTML = "<p>" + message + "</p>";    
+}
+
+function clearMessage(){
+    formInfo.innerHTML = "";
 }
