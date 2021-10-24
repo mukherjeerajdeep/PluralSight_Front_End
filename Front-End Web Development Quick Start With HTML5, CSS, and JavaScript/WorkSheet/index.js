@@ -1,13 +1,6 @@
 // // index.js
-// var number = 10;
-// let fieldName = "Rajdeep";
 
-// number = 12;
-// namfieldNamee = "Mukherjee ";
-// // writing to the document
-// document.writeln(number);
-// document.writeln(fieldName + number);
-// //alert("Hello World");
+import ContactForm from "./Contact.js";
 
 const formInfo = document.getElementById("formInfo");
 
@@ -40,7 +33,8 @@ function clearMessage(){
 const contactForm = document.getElementById("contact");
 contactForm.addEventListener("submit",function(event){
     event.preventDefault();
-    showMessage("Sending your message...");
+    const contact = new ContactForm(contactForm);
+    contact.send();
 });
 
 // function sendMessage() {
